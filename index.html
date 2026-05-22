@@ -58,11 +58,11 @@
             if (isDark) {
                 pagebody.classList.add('dark-theme');
                 // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+                document.getElementById("mobile-toggle-theme").innerText = "· 深色"
             } else {
                 pagebody.classList.remove('dark-theme');
                 // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+                document.getElementById("mobile-toggle-theme").innerText = "· 浅色"
             }
         })();
     </script>
@@ -71,16 +71,16 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Home</a></div>
+            <div class="navbar-header header-logo"><a href="/">首页</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
-                    <a class="menu-item" href="/category">Categories</a>
+                    <a class="menu-item" href="/category">分类</a>
                 
-                    <a class="menu-item" href="/tag">Tags</a>
+                    <a class="menu-item" href="/tag">标签</a>
                 
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">关于</a>
                 
                 <input id="switch_default" type="checkbox" class="switch_default">
                 <label for="switch_default" class="toggleBtn"></label>
@@ -93,19 +93,19 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Home</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">首页</a><a id="mobile-toggle-theme">·&nbsp;浅色</a>
                 </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; 菜单</div>
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
-                    <a class="menu-item" href="/category">Categories</a>
+                    <a class="menu-item" href="/category">分类</a>
                 
-                    <a class="menu-item" href="/tag">Tags</a>
+                    <a class="menu-item" href="/tag">标签</a>
                 
-                    <a class="menu-item" href="/about">About</a>
+                    <a class="menu-item" href="/about">关于</a>
                 
             </div>
         </div>
@@ -127,55 +127,85 @@
 </script>
             <div class="main">
                 
-    <div class="container profile-container">
-    <div class="intro">
-        <div class="avatar">
-            <a href="/archives"><img src="/image/avatar.jpeg"></a>
+    <div class="container home-container">
+    <section class="home-hero">
+        <div class="home-profile">
+            <a class="home-avatar" href="/archives"><img src="/image/avatar.jpeg" alt="Bay Max"></a>
+            <div>
+                <p class="home-eyebrow">个人博客</p>
+                <h1>Bay Max</h1>
+                <p class="home-description">这里记录工作里的复盘、业余时间的学习安排，以及生活中偶尔冒出来的想法。文字不追求宏大，只想把当下认真留下来。</p>
+                <div class="home-actions">
+                    <a class="home-button primary" href="/archives">查看全部文章</a>
+                    <a class="home-button" href="/categories/%E7%94%9F%E6%B4%BB/">看看生活记录</a>
+                </div>
+            </div>
         </div>
-        <div class="nickname">Bay Max</div>
-        <div class="description"><p>这是一个用来记录自己工作，生活的流水账.</p>
-</div>
-        <div class="links">
-            
-                
-                    <a class="link-item" title="Blog" href="/archives">
-                        
-                        
-                            <i class="iconfont icon-blog"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="ZhiHu" target="_blank" rel="noopener" href="https://www.zhihu.com/people/sirice">
-                        
-                        
-                            <i class="iconfont icon-zhihu"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Instagram" href="">
-                        
-                        
-                            <i class="iconfont icon-instagram"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Reddit" href="">
-                        
-                        
-                            <i class="iconfont icon-reddit"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/">
-                        
-                        
-                            <i class="iconfont icon-github"></i>
-                        
-                    </a>
-                
-            
+        <div class="home-links">
+            <a class="link-item" title="文章" href="/archives">
+                <i class="iconfont icon-blog"></i>
+            </a>
+            <a class="link-item" title="知乎" target="_blank" rel="noopener" href="https://www.zhihu.com/people/sirice">
+                <i class="iconfont icon-zhihu"></i>
+            </a>
+            <a class="link-item" title="照片" href="">
+                <i class="iconfont icon-instagram"></i>
+            </a>
+            <a class="link-item" title="社区" href="">
+                <i class="iconfont icon-reddit"></i>
+            </a>
+            <a class="link-item" title="代码" target="_blank" rel="noopener" href="https://github.com/">
+                <i class="iconfont icon-github"></i>
+            </a>
         </div>
-    </div>
+    </section>
+
+    <section class="home-content">
+        <main class="home-main">
+            <div class="home-section-header">
+                <p class="home-eyebrow">文章更新</p>
+                <h2>最近写下的内容</h2>
+            </div>
+            <div class="article-feed">
+                <article class="article-card">
+                    <div class="article-category">生活感悟</div>
+                    <a class="article-title" href="/2026/05/23/cbr500r/">梦中情车</a>
+                    <div class="article-meta">2026 年 5 月 23 日 · 有感而发</div>
+                    <p class="article-excerpt">从刚上班时喜欢的本田 CBR500R，想到那些曾经够不到、如今却忽然可以靠近的东西。梦中情车到底还算不算梦中情车？</p>
+                    <a class="article-more" href="/2026/05/23/cbr500r/">阅读全文 →</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-category">学习计划</div>
+                    <a class="article-title" href="/2025/03/03/plan0303/">2025-3-3 计划</a>
+                    <div class="article-meta">2025 年 3 月 3 日 · 技术学习</div>
+                    <p class="article-excerpt">给未来一周做的业余学习安排：从 Spring Cloud 的服务注册、负载均衡到接口调用，把学习、实践和总结拆成每天可以推进的小块。</p>
+                    <a class="article-more" href="/2025/03/03/plan0303/">阅读全文 →</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-category">生活感悟</div>
+                    <a class="article-title" href="/2025/03/03/firstPage/">最近的感悟</a>
+                    <div class="article-meta">2025 年 3 月 3 日 · 有感而发</div>
+                    <p class="article-excerpt">一些关于生活、工作和学习状态的碎碎念。把阶段性的想法写下来，也算是给之后的自己留一个回头看的入口。</p>
+                    <a class="article-more" href="/2025/03/03/firstPage/">阅读全文 →</a>
+                </article>
+            </div>
+        </main>
+        <aside class="home-side">
+            <section class="home-card home-note-card">
+                <h3>写在前面</h3>
+                <p>这个博客更像一本公开的随手记：技术要学，生活也要过，想到什么就慢慢写下来。</p>
+            </section>
+            <section class="home-card">
+                <h3>文章归档</h3>
+                <p>按时间翻一翻以前写过的内容。</p>
+                <a class="home-archive-link" href="/archives">进入归档 →</a>
+            </section>
+            <section class="home-card">
+                <h3>内容分类</h3>
+                <p><a class="home-archive-link" href="/tags/%E5%AD%A6%E4%B9%A0/">学习笔记</a> · <a class="home-archive-link" href="/tags/%E8%AE%A1%E5%88%92/">阶段计划</a> · <a class="home-archive-link" href="/tags/%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91/">生活感悟</a></p>
+            </section>
+        </aside>
+    </section>
 </div>
 
 
