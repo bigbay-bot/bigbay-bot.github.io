@@ -1384,6 +1384,18 @@ body.home-page.dark-theme {
 .tag:not(:last-child) a::after {
   content: " / ";
 }
+.giscus-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(45,150,189,0.16);
+}
+.giscus-section h2 {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}
+.dark-theme .giscus-section {
+  border-top-color: rgba(255,255,255,0.12);
+}
 .post-toc {
   position: fixed;
   top: 95px;
